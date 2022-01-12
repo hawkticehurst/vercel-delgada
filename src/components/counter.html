@@ -1,0 +1,30 @@
+<script>
+  const button = document.querySelector('button');
+  button.addEventListener('click', incremementCount);
+
+  function incremementCount() {
+    const countSpan = document.getElementById('count');
+    let count = parseInt(countSpan.textContent);
+    countSpan.textContent = count + 1;
+  }
+</script>
+
+<button>Clicked <span id="count">0</span> times</button>
+
+<style>
+  button {
+    font-family: inherit;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(67, 42, 230);
+    padding: 0.75rem 1rem;
+    margin: 1rem;
+  }
+
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(53, 32, 187);
+  }
+</style>

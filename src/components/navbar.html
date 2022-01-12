@@ -1,0 +1,43 @@
+<script>
+  const pathname = window.location.pathname;
+  if (pathname == '/about') {
+    const aboutLink = document.getElementById('about-link');
+    aboutLink.classList.add('toggled-link');
+  } else if (pathname == '/writing/post1') {
+    const postLink = document.getElementById('post-link');
+    postLink.classList.add('toggled-link');
+  } else {
+    const homeLink = document.getElementById('home-link');
+    homeLink.classList.add('toggled-link');
+  }
+</script>
+
+<header>
+  <nav>
+    <a id="home-link" href="/">Home</a>
+    <a id="about-link" href="/about">About</a>
+    <a id="post-link" href="/writing/post1">Writing Post 1</a>
+  </nav>
+</header>
+
+<style>
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav > a {
+    margin: 0 0.5rem;
+  }
+
+  .toggled-link {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+  }
+</style>

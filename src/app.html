@@ -1,0 +1,42 @@
+<!-- 
+  import './components/navbar.html'
+  import './components/welcome.html'
+  import './components/counter.html'
+ -->
+
+<main>
+  <navbar></navbar>
+  <welcome name="Delgada" link="https://delgada.dev"></welcome>
+  <p>Get started by editing <code>src/app.html</code></p>
+  <counter></counter>
+  <p id="docs">
+    Read the docs at <a href="https://delgada.dev/docs">delgada.dev/docs</a>.
+  </p>
+</main>
+
+<style>
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  main > p {
+    text-align: center;
+  }
+
+  code {
+    font-family: monospace;
+    color: rgb(13, 82, 40);
+    background-color: rgb(186, 210, 197);
+    padding: 0.25rem;
+    border-radius: 4px;
+  }
+
+  #docs {
+    position: fixed;
+    bottom: 10px;
+  }
+</style>

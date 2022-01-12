@@ -1,0 +1,33 @@
+<!-- 
+  import '../../../components/navbar.html'
+ -->
+
+<main>
+  <navbar></navbar>
+  <section class="post-content">
+    <h1>Writing Post 1</h1>
+    <p>This page should have a bunch of styling similar to previous pages.</p>
+  </section>
+</main>
+
+<style>
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .post-content {
+    width: 50%;
+    margin: 4rem 0 1rem 0;
+  }
+
+  @media (max-width: 767px) {
+    .post-content {
+      width: 90%;
+      margin: 4rem 1rem 1rem 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,64 @@
+<!-- 
+  import '../../components/navbar.html'
+ -->
+
+<main>
+  <navbar></navbar>
+  <section class="about-content">
+    <p>
+      This is a <a href="https://delgada.dev">Delgada</a> website. Delgada is a
+      small, wickedly fast, Rust-based frontend web compiler for building slim
+      UIs.
+    </p>
+    <p>You can make your own by typing the following into your command line:</p>
+    <section class="code-block">
+      <span>npx degit delgada-ui/template my-delgada-project</span>
+      <span>cd my-delgada-project</span>
+      <span>npm install</span>
+      <span>npm start</span>
+    </section>
+    <p>Delgada is best used for building small (mostly) static websites.</p>
+    <p>
+      You won't find any fancy diffing algorithms, virtual doms, reactive data,
+      stateful components, or declarative syntax here. It's just plain vanilla
+      HTML, CSS, and JavaScript that can be organized and structured in a way
+      that is far more composable and easy to reason about.
+    </p>
+  </section>
+</main>
+
+<style>
+  main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .about-content {
+    width: 50%;
+    margin: 4rem 0 1rem 0;
+  }
+
+  @media (max-width: 767px) {
+    .about-content {
+      width: 90%;
+      margin: 4rem 1rem 1rem 1rem;
+    }
+  }
+
+  .code-block {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    background-color: rgb(186, 210, 197);
+    padding: 1rem;
+    border-radius: 4px;
+  }
+
+  .code-block span {
+    line-height: 1.5rem;
+    color: rgb(13, 82, 40);
+  }
+</style>
